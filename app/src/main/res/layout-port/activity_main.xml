@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    tools:context="com.volod9k.nowamaska.MainActivity">
+
+    <ImageView
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/photo"
+        android:src="@drawable/main_photo"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/photo"
+        android:id="@+id/business_name"
+        android:textColor="#FAFAFA"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="22sp"
+        android:text="Nowa Maska Piano Art Club &amp; Restaurant"/>
+
+    <ImageView
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/business_name"
+        android:id="@+id/street_map"
+        android:src="@drawable/street_map"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/business_name"
+        android:layout_toRightOf="@id/street_map"
+        android:id="@+id/street_des"
+        android:textColor="#FAFAFA"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:text="Krakowskie Przedmieście 4/6 Warsaw 00-333"/>
+
+    <ImageView
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/street_map"
+        android:id="@+id/phone"
+        android:src="@drawable/phon_call"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_below="@id/street_des"
+        android:layout_toRightOf="@id/phone"
+        android:id="@+id/time_des"
+        android:textColor="#FAFAFA"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:text="571 241 550"/>
+
+    <ImageView
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/phone"
+        android:id="@+id/web"
+        android:src="@drawable/www"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_below="@id/time_des"
+        android:layout_toRightOf="@id/web"
+        android:id="@+id/web_des"
+        android:textColor="#FAFAFA"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:text="www.nova-maska.pl"/>
+
+    <ImageView
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/web"
+        android:id="@+id/time"
+        android:src="@drawable/time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_below="@id/web_des"
+        android:layout_toRightOf="@id/time"
+        android:id="@+id/time_desc"
+        android:textColor="#FAFAFA"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:text="Fr. 20:00 - 05:00;  Sa. 20:00 - 05:00"/>
+
+    <ImageView
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/time"
+        android:id="@+id/description"
+        android:src="@drawable/browser"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_below="@id/time_desc"
+        android:layout_toRightOf="@id/description"
+        android:id="@+id/description_desc"
+        android:textColor="#FAFAFA"
+        android:fontFamily="sans-serif-light"
+        android:textSize="16sp"
+        android:text="Dance night club"/>
+
+
+
+</RelativeLayout>
