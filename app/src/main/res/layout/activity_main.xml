@@ -1,155 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#424242"
-    android:id="@+id/main"
+    android:orientation="vertical"
     tools:context="com.volod9k.nowamaska.MainActivity">
 
     <ImageView
-        android:layout_height="150dp"
-        android:layout_width="match_parent"
-        android:scaleType="centerCrop"
         android:id="@+id/photo"
-        android:src="@drawable/main_photo"
-        android:layout_alignParentTop="true"/>
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.45"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_photo"/>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:layout_below="@id/photo">
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:scrollbars="none">
 
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="16dp"
-                android:layout_centerHorizontal="true"
                 android:id="@+id/business_name"
-                android:textColor="#FAFAFA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
-                android:textSize="22sp"
-                android:text="Nowa Maska Piano Art Club &amp; Restaurant"/>
-
-            <ImageView
-                android:layout_height="24dp"
-                android:layout_width="24dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="16dp"
-                android:layout_below="@id/business_name"
-                android:id="@+id/street_map"
-                android:src="@drawable/street_map"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:layout_below="@id/business_name"
-                android:layout_toRightOf="@id/street_map"
-                android:id="@+id/street_des"
+                android:text="Nowa Maska Piano Art Club &amp; Restaurant"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
                 android:textColor="#FAFAFA"
-                android:fontFamily="sans-serif-light"
-                android:textSize="16sp"
-                android:text="Krakowskie Przedmieście 4/6 Warsaw 00-333"/>
+                android:background="#455A64"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="19sp"/>
 
-            <ImageView
-                android:layout_height="24dp"
-                android:layout_width="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="16dp"
-                android:layout_below="@id/street_map"
-                android:id="@+id/phone"
-                android:src="@drawable/phon_call"/>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_below="@id/street_des"
-                android:layout_toRightOf="@id/phone"
-                android:id="@+id/time_des"
-                android:textColor="#FAFAFA"
-                android:fontFamily="sans-serif-light"
-                android:textSize="16sp"
-                android:text="571 241 550"/>
+                android:orientation="horizontal"
+                android:background="@drawable/my_button_bg">
 
-            <ImageView
-                android:layout_height="24dp"
-                android:layout_width="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="16dp"
-                android:layout_below="@id/phone"
-                android:id="@+id/web"
-                android:src="@drawable/www"/>
+                <ImageView
+                    android:id="@+id/street_map"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/placeholder" />
 
-            <TextView
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/street_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Krakowskie Przedmieście 4/6 Warsaw 00-333"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_below="@id/time_des"
-                android:layout_toRightOf="@id/web"
-                android:id="@+id/web_des"
-                android:textColor="#FAFAFA"
-                android:fontFamily="sans-serif-light"
-                android:textSize="16sp"
-                android:text="www.nova-maska.pl"/>
+                android:orientation="horizontal"
+                android:background="@drawable/my_button_bg">
 
-            <ImageView
-                android:layout_height="24dp"
-                android:layout_width="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="16dp"
-                android:layout_below="@id/web"
-                android:id="@+id/time"
-                android:src="@drawable/time"/>
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/phone_call" />
 
-            <TextView
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/time_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="571 241 550"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_below="@id/web_des"
-                android:layout_toRightOf="@id/time"
-                android:id="@+id/time_desc"
-                android:textColor="#FAFAFA"
-                android:fontFamily="sans-serif-light"
-                android:textSize="16sp"
-                android:text="Fr. 20:00 - 05:00;  Sa. 20:00 - 05:00"/>
+                android:orientation="horizontal"
+                android:background="@drawable/my_button_bg">
 
-            <ImageView
-                android:layout_height="24dp"
-                android:layout_width="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="16dp"
-                android:layout_below="@id/time"
-                android:id="@+id/description"
-                android:src="@drawable/browser"/>
+                <ImageView
+                    android:id="@+id/web"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/earth_globe" />
 
-            <TextView
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/web_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="www.nova-maska.pl"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_marginBottom="26dp"
-                android:layout_below="@id/time_desc"
-                android:layout_toRightOf="@id/description"
-                android:id="@+id/description_desc"
-                android:textColor="#FAFAFA"
-                android:fontFamily="sans-serif-light"
-                android:textSize="16sp"
-                android:text="Dance night club"/>
+                android:orientation="horizontal"
+                android:background="@drawable/my_button_bg">
 
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/time"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/time_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Fr. 20:00 - 05:00;  Sa. 20:00 - 05:00"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/my_button_bg">
+
+                <ImageView
+                    android:id="@+id/description"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/list" />
+
+                <TextView
+                    android:id="@+id/description_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Dance night club."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+</LinearLayout>
